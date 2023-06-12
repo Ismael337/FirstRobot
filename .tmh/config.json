@@ -1,3 +1,9 @@
 {
-  "issueKeyTestcaseValues": {}
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/robotazrggzx/aubay/testmanager_",
+  "defaultProject": {
+    "id": "97f4f150-a61f-0000-f4cf-0b45774e6bbc",
+    "name": "MYAUBAY",
+    "key": "MYAUB"
+  }
 }

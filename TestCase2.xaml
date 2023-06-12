@@ -1,0 +1,427 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1201.3333333333333,3333.3333333333335" sap2010:WorkflowViewState.IdRef="TestCase2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TestCase2" sap:VirtualizedContainerService.HintSize="610.6666666666666,3268.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Email" />
+      <Variable x:TypeArguments="x:String" Name="Pwd" />
+      <Variable x:TypeArguments="x:Boolean" Name="EmailExpected" />
+      <Variable x:TypeArguments="x:Boolean" Name="PwdExpected" />
+      <Variable x:TypeArguments="x:String" Name="ConnexionTextExpected" />
+      <Variable x:TypeArguments="x:String" Name="ConnexionText" />
+      <Variable x:TypeArguments="x:String" Name="Bannieres" />
+      <Variable x:TypeArguments="x:String" Name="BannieresExpected" />
+      <Variable x:TypeArguments="x:String" Name="Bienvenue" />
+      <Variable x:TypeArguments="x:String" Name="LogoMyAubay" />
+      <Variable x:TypeArguments="x:String" Name="ChampPwd" />
+      <Variable x:TypeArguments="x:String" Name="ChampID" />
+      <Variable x:TypeArguments="x:String" Name="ButtonConnexion" />
+      <Variable x:TypeArguments="x:String" Name="Version" />
+      <Variable x:TypeArguments="x:String" Name="LogoMyAubayExpected" />
+      <Variable x:TypeArguments="x:String" Name="BienvenueExpected" />
+      <Variable x:TypeArguments="x:String" Name="ChampIDExpected" />
+      <Variable x:TypeArguments="x:String" Name="ChampPwdExpected" />
+      <Variable x:TypeArguments="x:String" Name="VersionExpected" />
+      <Variable x:TypeArguments="ss:SecureString" Name="MyPassword" />
+      <Variable x:TypeArguments="x:String" Name="ID" />
+      <Variable x:TypeArguments="x:String" Name="Password1" />
+      <Variable x:TypeArguments="x:String" Name="Url" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="548.6666666666666,676.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,315.3333333333333" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[LogoMyAubayExpected]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">logo MyAubay</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[BienvenueExpected]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Bienvenue sur MyAubay</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[ChampIDExpected]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Identifiant ou adresse e-mail Aubay</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[ChampPwdExpected]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">password</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[ConnexionTextExpected]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">CONNEXION</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[ID]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">sdelarue</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[Password1]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">sdelarue</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[Url]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">["https://family.aubay.com/admin/#/login"]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:MultipleAssign>
+      <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
+          <OutArgument x:TypeArguments="ss:SecureString">[MyPassword]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="ss:SecureString">[(new System.Net.NetworkCredential("", Password1)).SecurePassword]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[BannieresExpected]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">Bannières</InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="548.6666666666666,727.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Sequence1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="486.6666666666667,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Sequence1.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_LogoExists" />
+          <OutArgument x:TypeArguments="x:String" x:Key="out_Bienvenue">[Bienvenue]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_LogoMyAubay">[LogoMyAubay]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_ChampID">[ChampID]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_ChampPwd">[ChampPwd]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_ButtonConnexion">[ButtonConnexion]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_Version">[Version]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Sequence2.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="486.6666666666667,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Sequence2.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_Pwd">
+            <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Pwd" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_Email">
+            <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Email" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_ConnexionText">
+            <VisualBasicReference x:TypeArguments="x:String" ExpressionText="ConnexionText" />
+          </OutArgument>
+          <InArgument x:TypeArguments="ss:SecureString" x:Key="in_Pwd">
+            <VisualBasicValue x:TypeArguments="ss:SecureString" ExpressionText="MyPassword" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_ID">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="ID" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Url">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,306" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Sequence3.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Sequence3.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_Bannieres">
+                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Bannieres" />
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="548.6666666666666,1674" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,196.66666666666666" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_4" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[LogoMyAubay]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">[LogoMyAubayExpected]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,307.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,196.66666666666666" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_5" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpressionWithOperator.FirstExpression>
+                <InArgument x:TypeArguments="x:String">[Bienvenue]</InArgument>
+              </uta:VerifyExpressionWithOperator.FirstExpression>
+              <uta:VerifyExpressionWithOperator.SecondExpression>
+                <InArgument x:TypeArguments="x:String">[BienvenueExpected]</InArgument>
+              </uta:VerifyExpressionWithOperator.SecondExpression>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uta:VerifyExpressionWithOperator>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[Bienvenue.Contains(&quot;Bienvenue&quot;)]" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="VerifyExpression_5" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,307.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_6" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpressionWithOperator.FirstExpression>
+                <InArgument x:TypeArguments="x:String">[ChampID]</InArgument>
+              </uta:VerifyExpressionWithOperator.FirstExpression>
+              <uta:VerifyExpressionWithOperator.SecondExpression>
+                <InArgument x:TypeArguments="x:String">[ChampIDExpected]</InArgument>
+              </uta:VerifyExpressionWithOperator.SecondExpression>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uta:VerifyExpressionWithOperator>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[ChampID.Contains(&quot;Identifiant&quot;)]" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="VerifyExpression_6" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_7" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[ChampPwd]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">[ChampPwdExpected]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uta:VerifyExpressionWithOperator>
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,196.66666666666666" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_8" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[ButtonConnexion]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">[ConnexionTextExpected]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Version" Expression="[Version.Contains(&quot;Numéro&quot;)]" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="VerifyExpression_4" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify ID MyAubay" Expression="[Not string.IsNullOrWhiteSpace(Email)]" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Password MyAubay" Expression="[Not string.IsNullOrWhiteSpace(Pwd)]" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_2" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[ConnexionText]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">[ConnexionTextExpected]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uta:VerifyExpressionWithOperator>
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Bannieres" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_3" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[Bannieres]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">[BannieresExpected]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uta:VerifyExpressionWithOperator>
+    </Sequence>
+  </Sequence>
+</Activity>
