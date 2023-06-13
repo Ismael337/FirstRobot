@@ -19,7 +19,9 @@ steps:
   displayName: 'Run a multi-line script'
 - task: UiPathRunJob@3
   inputs:
-    orchestratorConnection: 'Con_Orchest_Devops'
+    orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
     processName: 'MyFirstRobot'
     folderName: 'MyAUBAY'
     jobType: 'TestAutomation'
+    user: 'tech\skonate'
+    machine: 'TECH-PO22402NN'
