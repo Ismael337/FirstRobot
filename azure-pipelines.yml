@@ -20,7 +20,7 @@ steps:
 - task: UiPathRunJob@3
   inputs:
     orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
-    processName: 'MyFirstRobot'
+    processName: 'MyFirstRobot_Tests'
     folderName: 'MyAUBAY'
     jobType: 'TestAutomation'
     user: 'tech\skonate'
