@@ -20,6 +20,7 @@ stages:
       - deployment: deployDEV
         displayName: Deploy package to DEV Orchestrator
         pool: MyAubay
+        environment: DEV
         strategy:
          runOnce:
           deploy:
