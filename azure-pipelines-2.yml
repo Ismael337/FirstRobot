@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  MyAubay
 
 steps:
 - script: echo Hello, world!
@@ -22,8 +22,8 @@ steps:
   inputs:
     versionType: 'AutoVersion'
     projectJsonPath: '$(Build.SourcesDirectory)'
-    outputType: 'Process'
-    orchestratorConnection: 'Con_Orchest_Devops'
+    outputType: 'Tests'
+    orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 - task: PublishBuildArtifacts@1
   inputs:
