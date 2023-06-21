@@ -19,19 +19,7 @@ stages:
       - publish: $(Build.ArtifactStagingDirectory)
         artifact: drop
 
-  - stage: Assest
-    displayName: Create Assests
-    jobs:
-      - job: CreateAssests
-        pool: MyAubay
-        steps:
-        - task: UiPathAssets@3
-          inputs:
-            orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
-            folderName: 'MyAUBAY'
-            assetActionType: 'Deploy'
-            csvFile: '$(Build.SourcesDirectory)\Data\Assests.csv'
-
+ 
 
   - stage: DeployDEV
     displayName: Deploy build artifact to DEV
