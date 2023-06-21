@@ -53,5 +53,5 @@ stages:
             inputs:
               testTarget: 'TestSet'
               orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
-              testSet: 'TEST_SET_AUTHENTIFICATION'
+              testSet: 'TEST_SET_2'
               folderName: 'MyAUBAY'
