@@ -76,4 +76,3 @@ stages:
               orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
               testSet: 'TEST_SET_AUTHENTIFICATION'
               folderName: 'MyAUBAY'
-              testReportDestination: '$(Pipeline.Workspace)\drop\'
