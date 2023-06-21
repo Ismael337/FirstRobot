@@ -1,7 +1,7 @@
 trigger:
   - master
 variables:
-  - group: DEV
+  - group: XYZ
 
 stages:
   - stage: Build
