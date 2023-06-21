@@ -39,27 +39,6 @@ stages:
                 orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
                 packagesPath: '$(Pipeline.Workspace)\drop\'
                 folderName: 'MyAUBAY'
-                
-
-  - stage: WorkflowAnalyser
-    displayName: RunWorkflow Analyser
-    dependsOn: Build
-    condition: succeeded()
-    jobs:
-      - job: WorkflowAnalyser
-        displayName: AnalyseProject Using Worflow Cli
-        pool: MyAubay
-        steps:
-        - task: PowerShell@2
-          inputs:
-            targetType: filePath
-            filePath: $(Build.SourcesDirectory)\Data\Workflow-Analyser-CLI-Script.ps1
-            arguments: > # Use to avoid newline characters in multiline string
-               -ProjectFilePath $(Build.SourcesDirectory)\project.json
-               -ExecutableFilePath "CC:\Users\skonate\AppData\Local\Programs\UiPath\Studio\UiPath.Studio.CommandLine.exe"
-               -OutputFilePath '$(Pipeline.workspace)\drop\workflow-Analysis.json'
-            workingDirectory: 'Analyse Project'
-          displayName: 'Analyse Project'
 
 
   - stage: TestDEV
