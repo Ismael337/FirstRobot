@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.4.1.0",
-  "projectVersion": "1.0.140107670",
+  "projectVersion": "1.0.140346420",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -58,11 +58,18 @@
         "fileName": "TestCase2.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "d5549149-6fdc-4faf-9e34-e4660137dde5",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TestCase_Authentification_MyAubay.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "87179331-b153-4b98-a083-e01a72d6964e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCase_Deconnexion_MyAubay.xaml"
       }
     ],
     "modernBehavior": true
