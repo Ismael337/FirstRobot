@@ -37,7 +37,7 @@ stages:
             - task: UiPathDeploy@3
               inputs:
                 orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
-                packagesPath: '$(Pipeline.Workspace)\drop\'
+                packagesPath: '$(Build.ArtifactStagingDirectory)'
                 folderName: 'MyAUBAY'
 
 
