@@ -8,14 +8,14 @@ stages:
     displayName: Build Package
     jobs:
     - job: BuildPackage
-      pool: LAPTOP-Q338O4FK
+      pool: MyAubay
       steps:
       - task: UiPathPack@3
         inputs:
           versionType: 'AutoVersion'
           projectJsonPath: '$(Build.SourcesDirectory)\project.json'
           outputType: 'Process'
-          orchestratorConnection: 'UiPath DEV'
+          orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
           outputPath: '$(Build.ArtifactStagingDirectory)'
       - publish: $(Build.ArtifactStagingDirectory)
         artifact: drop
@@ -24,12 +24,12 @@ stages:
     displayName: Create Assests
     jobs:
       - job: CreateAssests
-        pool: LAPTOP-Q338O4FK
+        pool: MyAubay
         steps:
         - task: UiPathAssets@3
           inputs:
-            orchestratorConnection: 'UiPath DEV'
-            folderName: 'Shared'
+            orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
+            folderName: 'MyAUBAY'
             assetActionType: 'Deploy'
             csvFile: '$(Build.SourcesDirectory)\Data\Assests.csv'
 
@@ -41,7 +41,7 @@ stages:
     jobs:
       - deployment: deployDEV
         displayName: Deploy package to DEV Orchestrator
-        pool: LAPTOP-Q338O4FK
+        pool: MyAubay
         environment: DEV
         strategy:
          runOnce:
@@ -49,9 +49,9 @@ stages:
            steps:
             - task: UiPathDeploy@3
               inputs:
-                orchestratorConnection: 'UiPath DEV'
+                orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
                 packagesPath: '$(Pipeline.Workspace)\drop\'
-                folderName: 'Shared'
+                folderName: 'MyAUBAY'
                 
 
   - stage: WorkflowAnalyser
@@ -61,7 +61,7 @@ stages:
     jobs:
       - job: WorkflowAnalyser
         displayName: AnalyseProject Using Worflow Cli
-        pool: LAPTOP-Q338O4FK
+        pool: MyAubay
         steps:
         - task: PowerShell@2
           inputs:
@@ -74,27 +74,6 @@ stages:
             workingDirectory: 'Analyse Project'
           displayName: 'Analyse Project'
 
-  - stage : CodeQuality
-    displayName: Check Code Analysis
-    dependsOn: Build
-    condition: succeeded()
-    jobs:
-      - job : CodeQuality
-        steps:
-          - task: SonarCloudPrepare@1
-            inputs:
-              SonarCloud: 'Sonar'
-              organization: 'rpabotsworld'
-              scannerMode: 'CLI'
-              configMode: 'manual'
-              cliProjectKey: 'rpabotsworld_UiPathAzureDevOpsExample'
-              cliProjectName: 'UiPathAzureDevOpsExample'
-              cliSources: '.'
-          - task: SonarCloudAnalyze@1
-          - task: SonarCloudPublish@1
-            inputs:
-              pollingTimeoutSec: '300'
-
 
   - stage: TestDEV
     displayName:  Test After Publish
@@ -102,12 +81,12 @@ stages:
     condition: succeeded()
     jobs:
       - job: TestDEV
-        pool: LAPTOP-Q338O4FK
+        pool: MyAubay
         steps:
           - task: UiPathTest@3
             inputs:
               testTarget: 'TestSet'
-              orchestratorConnection: 'UiPATH RPABOTSWORLD'
-              testSet: 'UiPathAzureDevOps_Tests'
-              folderName: 'Shared'
+              orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
+              testSet: 'TEST_SET_AUTHENTIFICATION'
+              folderName: 'MyAUBAY'
               testReportDestination: '$(Pipeline.Workspace)\drop\'
