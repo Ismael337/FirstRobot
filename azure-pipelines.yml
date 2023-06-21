@@ -17,7 +17,7 @@ stages:
           orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
           outputPath: '$(Build.ArtifactStagingDirectory)'
       - publish: $(Build.ArtifactStagingDirectory)
-        artifact: drop
+
 
  
 
