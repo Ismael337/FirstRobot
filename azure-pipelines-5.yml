@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  MyAubay
 
 steps:
 - script: echo Hello, world!
