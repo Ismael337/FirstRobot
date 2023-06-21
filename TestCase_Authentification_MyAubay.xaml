@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase_Authentification_MyAubay" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1196,1135.3333333333333" sap2010:WorkflowViewState.IdRef="TestCase_Authentification_MyAubay_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase_Authentification_MyAubay" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="736,2818" sap2010:WorkflowViewState.IdRef="TestCase_Authentification_MyAubay_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -108,7 +108,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestCase_Authentification_MyAubay" sap:VirtualizedContainerService.HintSize="574,1070.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestCase_Authentification_MyAubay" sap:VirtualizedContainerService.HintSize="746,2753.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Bienvenue" />
       <Variable x:TypeArguments="x:String" Name="LogoMyAubay" />
@@ -148,7 +148,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="512,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="684,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -280,7 +280,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
     </Sequence>
-    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="512,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="684,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -311,7 +311,7 @@
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="512,569.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="684,2252" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="Result_Logo" />
         <Variable x:TypeArguments="x:Boolean" Name="Result_Bienvenue" />
@@ -330,7 +330,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="622,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -416,7 +416,7 @@
           </sap:WorkflowViewStateService.ViewState>
         </uta:VerifyExpression>
       </Sequence>
-      <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="622,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:Boolean" Name="Result_ID" />
           <Variable x:TypeArguments="x:Boolean" Name="Result_Pwd" />
@@ -446,7 +446,7 @@
         </uta:VerifyExpressionWithOperator>
         <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[AvatarText=AvatarTextExpected]" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="VerifyExpression_4" Result="[Result_Avatar]" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
       </Sequence>
-      <Sequence DisplayName="Logout" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <Sequence DisplayName="Logout" sap:VirtualizedContainerService.HintSize="622,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -510,13 +510,13 @@
           </sap:WorkflowViewStateService.ViewState>
         </uta:VerifyExpressionWithOperator>
       </Sequence>
-      <Sequence DisplayName="Send notification Teams" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence DisplayName="Send notification Teams" sap:VirtualizedContainerService.HintSize="622,1767.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="DateOfDay" />
         </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
@@ -528,7 +528,7 @@
             <InArgument x:TypeArguments="x:String">[Date.Now.ToString("dd/MM/yyyy")]</InArgument>
           </Assign.Value>
         </Assign>
-        <If Condition="[Result_Annuler=True and Result_Bienvenue=True  and Result_ChampID=True and Result_ChampPwd=True and Result_Confirmer=True and Result_Deconnexion=True and Result_Logo=True and Result_TextConnexion=True and Result_TextDeco=True and Result_Version=True]" DisplayName="Check if all verify are true " sap:VirtualizedContainerService.HintSize="560,2878.6666666666665" sap2010:WorkflowViewState.IdRef="If_1">
+        <If Condition="[Result_Annuler=True and Result_Bienvenue=True  and Result_ChampID=True and Result_ChampPwd=True and Result_Confirmer=True and Result_Deconnexion=True and Result_Logo=True and Result_TextConnexion=True and Result_TextDeco=True and Result_Version=True]" DisplayName="Check if all verify are true " sap:VirtualizedContainerService.HintSize="560,1531.3333333333333" sap2010:WorkflowViewState.IdRef="If_1">
           <If.Then>
             <Sequence sap:VirtualizedContainerService.HintSize="526,1347.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <sap:WorkflowViewStateService.ViewState>
@@ -548,33 +548,21 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Conversation'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8242d33-f774-4c1b-9ebb-279c44d81890" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Conversation'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8242d33-f774-4c1b-9ebb-279c44d81890" Version="V3">
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvTextArgument="Conversation" CvType="Text" DesignTimeRectangle="97, 80, 126, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Conversation'" Guid="cb63d069-18ae-4985-856c-8409dae324a1" InformativeScreenshot="05fd77502374303292e4aa479c5c83b8.png" ScopeSelectorArgument="&lt;wnd app='teams.exe' cls='Chrome_WidgetWin_1' title='Soumaila KONATE (Vous) | Microsoft Teams' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArgument="Conversation" CvType="Text" DesignTimeRectangle="15, 150, 59, 9" ElementType="Text" FriendlyName="'Conversation'" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
+                          <uix:TargetAnchorable DesignTimeRectangle="131, 108, 198, 40" DesignTimeScaleFactor="1.5" FriendlyName="'Conversation'" FullSelectorArgument="&lt;ctrl name='Jean-philippe SEGUR | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Liste des conversations' role='grouping' /&gt;&lt;ctrl name='Conversation' role='menu button' /&gt;&lt;ctrl role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Jean-philippe SEGUR | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Liste des conversations' role='grouping' /&gt;&lt;ctrl name='Conversation' role='menu button' /&gt;&lt;ctrl role='grouping' automationid='' check:text='Conversation' /&gt;" Guid="204041fc-6ef6-41f2-950b-032a3bb0254f" ImageBase64="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" InformativeScreenshot="b1b209450c978545156784838faf4d91.png" ScopeSelectorArgument="&lt;wnd app='teams.exe' cls='Chrome_WidgetWin_1' title='Jean-philippe SEGUR | Microsoft Teams' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Contacts'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8242d33-f774-4c1b-9ebb-279c44d81890" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'list item Contacts'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8242d33-f774-4c1b-9ebb-279c44d81890" Version="V3">
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvElementArea="88, 156, 195, 49" CvTextArea="106, 166, 55, 13" CvTextArgument="Contacts" CvType="InputBox" DesignTimeRectangle="89, 157, 204, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Contacts'" Guid="5a2d84cb-1fc2-4317-b898-828e7ff8f9b9" InformativeScreenshot="9613c0df43edd2240eac3dba7ff8c660.png" ScopeSelectorArgument="&lt;wnd app='teams.exe' cls='Chrome_WidgetWin_1' title='Soumaila KONATE (Vous) | Microsoft Teams' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArgument="Contacts" CvType="Text" DesignTimeRectangle="106, 166, 55, 13" ElementType="Text" FriendlyName="'Contacts'" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
+                          <uix:TargetAnchorable DesignTimeRectangle="131, 230, 300, 48" DesignTimeScaleFactor="1.5" ElementType="ListItem" FriendlyName="'list item Contacts'" FullSelectorArgument="&lt;ctrl name='Jean-philippe SEGUR | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Liste des conversations' role='grouping' /&gt;&lt;ctrl name='Contacts' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Jean-philippe SEGUR | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Liste des conversations' role='grouping' /&gt;&lt;ctrl name='Contacts' role='list item' automationid='' /&gt;" Guid="1539e7f9-4038-47f6-be34-7153b3aef9ae" ImageBase64="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" InformativeScreenshot="66aeeb7c629d2319e8f0262dc7d71ecf.png" ScopeSelectorArgument="&lt;wnd app='teams.exe' cls='Chrome_WidgetWin_1' title='Jean-philippe SEGUR | Microsoft Teams' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
                       <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Saisissez un message'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e8242d33-f774-4c1b-9ebb-279c44d81890" Text="[DateOfDay+&quot; : The test case Authentification_MyAubay was passed.&quot;]" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable CvElementArea="726, 965, 919, 43" CvTextArea="741, 980, 132, 16" CvTextArgument="Saisissez un message" CvType="InputBox" DesignTimeRectangle="725, 965, 919, 44" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Saisissez un message'" Guid="b8f84711-a98c-473d-b694-b3e745926c43" InformativeScreenshot="20c879524ec5ed7eb93a7ab7239fd3a8.png" ScopeSelectorArgument="&lt;wnd app='teams.exe' cls='Chrome_WidgetWin_1' title='Soumaila KONATE (Vous) | Microsoft Teams' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                 <uix:Target CvTextArgument="Saisissez un message" CvType="Text" DesignTimeRectangle="741, 980, 132, 16" ElementType="Text" FriendlyName="'Saisissez un message'" SearchSteps="CV" TargetType="ComputerVisionBased" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
