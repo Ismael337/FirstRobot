@@ -21,7 +21,7 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Con_AzureDevOps_Orchestrator'
-    testSet: 'TS_MyAubayMag'
+    testSet: 'TS_CICD'
     folderName: 'MyAUBAY'
 - task: UiPathPack@3
   inputs:
